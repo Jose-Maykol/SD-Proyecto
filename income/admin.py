@@ -1,3 +1,5 @@
 from django.contrib import admin
+from income.models import Category, Income
 
-# Register your models here.
+admin.site.register(Income)
+admin.site.register(Category)

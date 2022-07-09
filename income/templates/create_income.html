@@ -1,0 +1,28 @@
+{% extends 'index.html' %}
+{% block content %}
+<div class="page-header">
+    <h1 class="page-title">Crear nuevo ingreso</h1>
+</div>
+<div class="col-xl-6 col-lg-12">
+  <div class="card">
+      <div class="card-header">
+          <h4 class="card-title">Gerenal Elements</h4>
+      </div>
+      <div class="card-body">
+          <form class="form-horizontal" method="post">
+            {% csrf_token %}
+            {% for field in form %}
+            <div class=" row mb-4">
+                <div class="form-group">
+                    {{ field.errors }}
+                    <label for="exampleInputEmail1" class="form-label">{{ field.label_tag }} </label>
+                    {{ field }}
+                </div>
+            </div>
+            {% endfor %}
+            <button class="btn btn-primary mt-4 mb-0">Agregar</button>
+          </form>
+      </div>
+  </div>
+</div>
+{% endblock content %}

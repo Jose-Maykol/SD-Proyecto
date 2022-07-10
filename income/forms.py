@@ -1,5 +1,4 @@
 from django import forms
-from django.forms import widgets
 
 from income.models import Income
 
@@ -9,7 +8,7 @@ class IncomeForm(forms.ModelForm):
     model = Income
     fields = (
       'amount',
-      'category'
+      'type'
     )
     
     widgets = {

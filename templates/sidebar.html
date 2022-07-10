@@ -22,7 +22,7 @@
             </svg></div>
         <ul class="side-menu">
             <li class="slide">
-                <a class="side-menu__item" data-bs-toggle="slide" href="index.html"><i
+                <a class="side-menu__item" data-bs-toggle="slide" href="{% url 'home' %}"><i
                         class="side-menu__icon fe fe-home"></i><span
                         class="side-menu__label">Home</span></a>
             </li>
@@ -33,8 +33,8 @@
                         class="angle fe fe-chevron-right"></i></a>
                 <ul class="slide-menu">
                     <li class="side-menu-label1"><a href="javascript:void(0)">Agregar</a></li>
-                    <li><a href="cards.html" class="slide-item"> Agregar ingresos</a></li>
-                    <li><a href="cards.html" class="slide-item"> Lista de ingresos</a></li>
+                    <li><a href="{% url 'create_income' %}" class="slide-item"> Agregar ingresos</a></li>
+                    <li><a href="{% url 'list_income' %}" class="slide-item"> Lista de ingresos</a></li>
                 </ul>
             </li>
             <li class="slide">
@@ -44,8 +44,8 @@
                         class="angle fe fe-chevron-right"></i></a>
                 <ul class="slide-menu">
                     <li class="side-menu-label1"><a href="javascript:void(0)">Agregar</a></li>
-                    <li><a href="cards.html" class="slide-item"> Agregar gastos</a></li>
-                    <li><a href="cards.html" class="slide-item"> Lista de gatos</a></li>
+                    <li><a href="{% url 'create_expense' %}" class="slide-item"> Agregar gastos</a></li>
+                    <li><a href="{% url 'list_expense' %}" class="slide-item"> Lista de gatos</a></li>
                 </ul>
             </li>
 {% comment %}             <li class="slide">

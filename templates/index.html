@@ -18,7 +18,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/brand/favicon.ico' %}" />
 
     <!-- TITLE -->
-    <title>Sash – Bootstrap 5 Admin & Dashboard Template </title>
+    <title>Inc & Exp Manage </title>
 
     <!-- BOOTSTRAP CSS -->
     <link id="style" href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -55,6 +55,18 @@
                     <!-- CONTAINER -->
                     <div class="main-container container-fluid">
                         {% block content %}
+                        <br>
+                        <div class="col-xl-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <h1>Gestion de Ingresos y Gastos</h1>
+                                        <p class="p-large p-heading">La mejor manera de controlar tus gastos familiares, facil de usar y muy intuitivo desde tu ordenador. Comienza a ahorrar ahora.</p>
+                                        <img class="img-fluid" src="{% static 'images/principal/img-home.jpg' %}" alt="alternative">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         {% endblock content %}
                     </div>
                     <!-- CONTAINER CLOSED -->

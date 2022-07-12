@@ -9,7 +9,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', HomeView.as_view(), name='home'),
     path('income/', include('income.urls')),
-    path('expenses/', include('expenses.urls'))
+    path('expenses/', include('expenses.urls')),
+    path('users/', include('users.urls'))
 ]
 
 urlpatterns = urlpatterns + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
